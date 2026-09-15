@@ -13,6 +13,7 @@ particle, repixel textures, per-particle profiles).
 ## Controls
 
 - **Right-click** an entity — target it (right-click again to untarget)
+- **R** — target whatever the crosshair is on (rebindable in Controls)
 - **G** — unified menu (Targets / Particles tabs)
 - **H** — clear target
 - **P** — unified menu (same as G)

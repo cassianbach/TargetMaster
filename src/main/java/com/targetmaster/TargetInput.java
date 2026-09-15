@@ -17,6 +17,10 @@ public class TargetInput {
             "key.targetmaster.menu", GLFW.GLFW_KEY_G, KeyBinding.Category.MISC));
     public static final KeyBinding CLEAR_TARGET = KeyBindingHelper.registerKeyBinding(new KeyBinding(
             "key.targetmaster.clear", GLFW.GLFW_KEY_H, KeyBinding.Category.MISC));
+    // Keybindable target select: targets whatever the crosshair is on.
+    // Rebindable in Controls like any vanilla key (default R).
+    public static final KeyBinding TARGET_SELECT = KeyBindingHelper.registerKeyBinding(new KeyBinding(
+            "key.targetmaster.select", GLFW.GLFW_KEY_R, KeyBinding.Category.MISC));
 
     private static boolean wasRightDown = false;
     private static boolean wasLeftDown = false;
@@ -43,6 +47,13 @@ public class TargetInput {
             wasLeftDown = false;
             dragging = false;
             return;
+        }
+
+        // Keybind target select (same as right-click targeting)
+        while (TARGET_SELECT.wasPressed()) {
+            if (TargetMasterConfig.get().enabled) {
+                tryTargetFromLook(mc);
+            }
         }
 
         long window = mc.getWindow().getHandle();

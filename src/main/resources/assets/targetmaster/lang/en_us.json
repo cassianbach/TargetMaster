@@ -2,6 +2,7 @@
   "category.targetmaster": "TargetMaster",
   "key.targetmaster.menu": "Open TargetMaster Menu",
   "key.targetmaster.clear": "Clear Target",
+  "key.targetmaster.select": "Target Aimed Entity",
   "key.particletuner.open_editor": "Open Particle Editor",
   "category.particletuner": "ParticleTuner",
   "menu.particletuner.editor": "Particles…",

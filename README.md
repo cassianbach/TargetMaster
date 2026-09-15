@@ -1,5 +1,9 @@
 # TargetMaster (Fabric 1.21.11)
 
+[![vibe coded](https://img.shields.io/badge/vibe-coded-ff69b4)](https://github.com/cassianbach/TargetMaster)
+
+> **Vibe coded** — this mod was written with an AI coding assistant. Expect charm, chaos, and the occasional haunted beam.
+
 Client-side Fabric mod for Minecraft 1.21.11: right-click any entity to target it —
 it gets a tall in-world beam + ground ring in your marker particle, plus an on-screen
 HUD panel with name, type, health bar and distance. Also bundles the ParticleTuner

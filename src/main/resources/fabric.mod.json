@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "targetmaster",
+  "version": "${version}",
+  "name": "TargetMaster",
+  "description": "Right-click to target entities, get an in-world beam + on-screen HUD, and tune every vanilla particle — all in one mod.",
+  "authors": [
+    "You"
+  ],
+  "contact": {},
+  "license": "MIT",
+  "icon": "assets/targetmaster/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.targetmaster.ParticleTunerClient"
+    ]
+  },
+  "mixins": [
+    "particletuner.mixins.json",
+    "particletuner.client.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.1",
+    "minecraft": "1.21.11",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}

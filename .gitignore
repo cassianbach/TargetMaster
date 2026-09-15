@@ -1,0 +1,10 @@
+build/
+.gradle/
+run/
+*.iml
+.idea/
+out/
+.DS_Store
+client.log
+client.err.log
+launch.bat
